@@ -1,0 +1,10 @@
+@import "../../../../assets/variables";
+
+.cart {
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 15px;
+    font-family: $font;
+    overflow: hidden;
+    margin: 20px;
+}

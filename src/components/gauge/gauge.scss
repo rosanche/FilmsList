@@ -1,0 +1,16 @@
+
+.gauge {
+    height: 15px;
+    display: flex;
+    flex-direction: row;
+
+    .likes {
+        height: inherit;
+        background-color: green;
+    }
+
+    .dislikes {
+        height: inherit;
+        background-color: red;
+    }
+}
