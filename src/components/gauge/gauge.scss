@@ -1,8 +1,9 @@
 
 .gauge {
-    height: 15px;
+    height: 5px;
     display: flex;
     flex-direction: row;
+    margin-top: 7px;
 
     .likes {
         height: inherit;

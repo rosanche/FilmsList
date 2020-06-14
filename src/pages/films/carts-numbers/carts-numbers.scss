@@ -1,0 +1,58 @@
+@import '../../../assets/variables';
+
+.carts-numbers {
+    font-family: $font;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 8px;
+    overflow: hidden;
+    max-height: 26px;
+    transition: 0.3s ease-in;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    left: 60%;
+
+    &.clicked {
+        max-height: 150px;
+
+        .arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    .title-number {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+        .arrow {
+            transition: 0.3s ease-in;
+            margin: 1px 0px 0px 10px;
+        }
+    }
+
+    .list-nb {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 7px;
+
+        .number {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            .checked {
+                margin: 5px 5px 5px 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 20px;
+                height: 20px;
+                border: 1px solid;
+                border-radius: 50%;
+            }
+        }
+    }
+}

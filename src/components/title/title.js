@@ -2,9 +2,9 @@ import React from 'react';
 
 import './title.scss';
 
-const Title = (props) => {
+const Title = ({ title }) => {
     return (
-    <span className="title">{props.title}</span>
+    <span className="title">{title}</span>
     );
 }
 

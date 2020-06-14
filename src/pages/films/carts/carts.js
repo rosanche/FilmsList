@@ -1,13 +1,18 @@
 import React from 'react';
 import Cart from './cart/cart';
 
-const Carts = (props) => {
+import './carts.scss';
+
+const Carts = ({films}) => {
+
     return (
-        props.films.map(film =>{
-            return (
-                <Cart film={film}/>
-            );
-        })
+        <ul className='carts'>
+            {films.map((film) =>{
+                return (
+                    <Cart key={film.id} film={film}/>
+                );
+            })}
+        </ul>
     );
 }
 

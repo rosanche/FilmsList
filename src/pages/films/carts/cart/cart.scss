@@ -3,8 +3,27 @@
 .cart {
     width: 250px;
     border-radius: 5px;
-    box-shadow: 3px 3px 15px;
+    box-shadow: 3px 5px 15px rgba($color: #000000, $alpha: 0.4);
     font-family: $font;
     overflow: hidden;
-    margin: 20px;
+    transition: 0.2s ease-in;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+    .title-delete {
+        display: flex;
+        justify-content: space-between;
+
+        .delete {
+            margin: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .category-likes {
+        display: flex;
+        justify-content: space-between;
+    }
 }

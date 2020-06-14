@@ -2,12 +2,10 @@ import React from 'react';
 
 import './gauge.scss';
 
-const Gauge = (props) => {
-    const { likes, dislikes } = props;
-
+const Gauge = ({ likes, dislikes }) => {
     const guessGauge = (number) => {
         const allLikes = likes + dislikes;
-        const width = number / allLikes * 100;
+        const width = Math.round(number / allLikes * 100);
         
         return (`${width}%`)
     }

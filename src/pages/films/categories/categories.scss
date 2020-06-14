@@ -1,0 +1,41 @@
+@import "../../../assets/variables";
+
+.categories {
+    font-family: $font;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 8px;
+    overflow: hidden;
+    max-height: 26px;
+    transition: 0.3s ease-in;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+    left: 40%;
+
+    &.clicked {
+        max-height: 180px;
+
+        .arrow {
+            transform: rotate(180deg);
+        }
+    }
+
+    .title-category {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 20px;
+        cursor: pointer;
+
+        .arrow {
+            transition: 0.3s ease-in;
+            margin: 1px 0px 0px 10px;
+        }
+    }
+
+    .list-categories {
+        padding: 0px;
+        margin: 0px;
+        margin-top: 7px;
+    }
+}
